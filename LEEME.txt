@@ -1,0 +1,45 @@
+CAZADORES DE DEMONIOS — GODOT 4
+
+Proyecto 2D creado a partir de las 23 hojas de sprites incluidas en tu archivo.
+
+ABRIR
+1. Descomprime Cazadores_Demonios_Godot.zip en una carpeta.
+2. Abre Godot 4.x y pulsa Importar.
+3. Selecciona project.godot dentro de Cazadores_Demonios_Godot.
+4. Pulsa F6/F5 para ejecutar.
+
+CONTROLES
+WASD o flechas: moverse. ESPACIO: atacar. Q/E: cambiar entre todos los personajes. 1-9: selección rápida de los primeros nueve. ENTER: reiniciar al perder.
+
+RECURSOS
+Cada carpeta tiene PNG individuales frame_XX.png con transparencia y sheet_transparent.png. Las imágenes originales usan una cuadrícula 4x3 sobre fondo verde; se extrajeron los 12 cuadros y se eliminó el verde brillante. Algunas poses de origen pueden tener animaciones repetidas porque así vienen en la hoja original.
+
+NOTA HONESTA
+Este entorno no tiene instalado el ejecutable de Godot, por lo que no se pudo hacer una prueba de ejecución dentro del motor. El proyecto está organizado para Godot 4 y usa rutas dinámicas para que todos los personajes y demonios con fotogramas se detecten automáticamente.
+\n\nCORRECCIÓN DE PANTALLAS (versión Tekken-style):\n- Menú principal: solo aparece el menú.\n- Selección: aparecen las dos mitades de la lista, cazadores a la izquierda y demonios a la derecha.\n- Combate: solo aparecen el cazador seleccionado y el demonio seleccionado, con sus barras de vida.\n- Los luchadores se orientan uno hacia el otro.\n\n\nMOVIMIENTO TIPO TEKKEN:\n- A/D o flechas izquierda/derecha: caminar lateralmente.\n- W o flecha arriba: saltar.\n- Los luchadores giran automáticamente para mirarse.\n- Se mantiene una distancia entre los cuerpos para que no se atraviesen.\n- Menú, selección y pelea se dibujan por separado.\n\n\nNUEVO: SELECCIÓN DE ESCENARIO\n1. Selecciona cazador y demonio.\n2. Pulsa ENTER/F para ir a elegir escenario.\n3. Usa A/D o flechas izquierda/derecha para cambiar entre escenarios.\n4. Pulsa ENTER/F para comenzar la pelea en el escenario elegido.\nEscenarios incluidos desde tu archivo: Templo de noche y Campo de duraznos.\n\nCORRECCIÓN DE NOMBRES EN SELECCIÓN:\n- Nombres de miniaturas limitados al ancho de cada tarjeta.\n- Nombres de las vistas previas centrados dentro de su propia tarjeta.\n- Se usan abreviaciones cuando el nombre es demasiado largo para evitar que se encime con el siguiente.\n\nCORRECCIÓN VISUAL DE SELECCIÓN: Los nombres grandes del cazador y demonio ahora se dibujan debajo de cada tarjeta por separado y tienen fondo oscuro para mejorar la lectura. Los nombres de las miniaturas se abrevian para no cruzar tarjetas.\n\nACTUALIZACIÓN VISUAL: selección estilo versus, cazadores en panel azul a la izquierda y demonios en panel rojo a la derecha; retratos grandes y nombres en etiquetas separadas. HUD de pelea separado por colores.\n
+MODO MULTIJUGADOR LOCAL Y SONIDO
+- En el menú elige “2 JUGADORES LOCAL” para jugar en el mismo teclado.
+- Jugador 1: A/D moverse, W saltar, F golpear, G técnica especial.
+- Jugador 2: flechas izquierda/derecha moverse, flecha arriba saltar, K golpear, L técnica especial.
+- Para jugar contra CPU, elige “JUGAR CONTRA LA CPU”.
+- Se incluyen efectos de sonido arcade para menú, salto, golpe, ataque especial y golpe fallido.
+Nota: es multijugador local en un mismo ordenador, no multijugador online.
+\nCORRECCIÓN VISUAL: eliminado el marco rectangular blanco que aparecía alrededor del luchador al recibir daño. Ahora el sprite solo cambia temporalmente de tono, sin caja alrededor.\n
+
+ACTUALIZACIÓN DEMON SLAYER — versión basada en DEMON SLAYER(10).rar
+- Menú renovado con el título DEMON SLAYER y cuatro personajes destacados: Tanjiro, Muzan, Mitsuri y Susamaru.
+- El roster se detecta automáticamente desde assets/characters, preservando los personajes nuevos.
+- Separación automática de cazadores y demonios por nombre de carpeta.
+- Selector de escenarios que carga los 29 fondos de assets/29_escenarios_Demon_Slayer_Pixel_Art.
+- Modo historia con capítulos y avance de enfrentamientos.
+- Pantalla de victoria con personaje animado, celebración visual y opción de revancha o siguiente capítulo.
+- Efectos de técnica con colores diferenciados por personaje.
+- Código y nombres de funciones en inglés; textos de interfaz en español.
+
+CONTROLES ACTUALIZADOS
+- Menú: W/S o flechas arriba/abajo; ENTER confirma.
+- Selección: A/D cambia el cazador; W/S cambia el demonio; ENTER/F continúa.
+- Escenario: A/D o flechas izquierda/derecha; ENTER/F comienza.
+- Jugador 1: A/D moverse, W saltar, F golpear, G técnica especial.
+- Jugador 2: flechas para moverse/saltar, K golpear, L técnica especial.
+- ESC vuelve atrás o sale al menú.
